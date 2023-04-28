@@ -19,7 +19,7 @@
 }
 
 .ui-menu-color-download {
-    background-color: gray;
+    background-color: rgb(61, 61, 61);
 }
 
 /* Heading */
@@ -64,11 +64,144 @@ header {
     margin: 0;
 }
 
+/* Menu */
+
 .menu-container {
     font-size: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+.menu-item {
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+
+.menu-item a {
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.menu-item a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+}
+
+.menu-item a:active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu-item a i {
+    padding-top: 22px;
+    display: block;
+    font-size: 26px;
+}
+
+.menu-item span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Hover.css */
+
+.hvr-sweep-to-bottom:before {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
+
+/* Special paddings/margins/text */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+    color: aliceblue;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/* Footer */
+
+footer {
+    background-color: #676767;
+    color: aliceblue;
+    min-height: 120px;
+    margin: 0;
+}
+
+.cv-pdf i {
+    font-size: 28px;
+    color: aliceblue;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover {
+    color: darkorange;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: aliceblue;
+    background: rgb(129, 129, 129);
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: darkorange;
+}
+
+#footer-details {
+    padding: 20px
 }
