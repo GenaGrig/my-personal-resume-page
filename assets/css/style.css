@@ -30,6 +30,14 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-work-history {
+    background-color: purple;
+}
+
+.bg-color-contact {
+    background-color: white;
+}
+
 /* Heading */
 
 header {
@@ -172,7 +180,8 @@ h5 {
     float: none;
 }
 
-.section-heading {
+.section-heading,
+.history-heading {
     font-family: 'Exo', sans-serif;
     font-weight: 300;
     margin-bottom: 40px;
@@ -228,7 +237,7 @@ footer {
 }
 
 #footer-details {
-    padding: 20px
+    padding: 35px;
 }
 
 /* Three reasons */
@@ -275,4 +284,115 @@ footer {
 .personal-info-item .value {
     position: relative;
     width: 60%;
+}
+
+/* Skills */
+
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+    line-height: 20px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    padding: 3px 30px 2px 10px;
+    color: aliceblue;
+    background-color: rgba(25, 25, 25, 0.2);
+    font-weight: 400;
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+/* Experience */
+
+.history-heading {
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: aliceblue;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 2.4em;
+    width: 12px;
+    height: 12px;
+    display: block;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+.history-items {
+    margin-bottom: 30px;
+}
+
+/* Contact form */
+
+.contact-heading {
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type='submit'] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: darkorange;
+    border-color: darkorange;
+    color: aliceblue;
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+/* Media queries */
+
+@media(min-width: 992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }

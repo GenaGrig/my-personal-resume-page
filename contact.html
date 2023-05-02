@@ -37,7 +37,7 @@
                                 <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa-solid fa-address-book" aria-hidden="true"></i><span>Contact</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menu-item">
-                                <a href="download.html" class="hvr-sweep-to-bottom"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Download</span></a>
+                                <a href="assets/cv/Genadijs GrigorjevsCVupd.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Download</span></a>
                             </li>
                         </ul>
                     </div>
@@ -45,8 +45,28 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="container-fluid">
+        <div class="row bg-color-contact">
+            <div class="col">
+                <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
+                <h5 class="uppercase text-center">Let's work together</h5>
 
+                <div class="center-form">
+                    <form>
+                        <input type="text" class="form-control" name="name" id="fullname" placeholder="Name" required>
+                        <input type="email" class="form-control" name="email" id="emailadress" placeholder="Email" required>
+                        <textarea rows="5" class="form-control" name="projectsummary" id="projectsummary" 
+                        placeholder="Project description" required></textarea>
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary">Send project request</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="container-fluid">
         <div id="footer-details" class="row">
@@ -60,7 +80,9 @@
                 <h5 class="uppercase general-sub">Download</h5>
                 <p class="inline-block">
                     Need a printable version of my resume? Download it here.
-                    <a href="assets/pdf/Genadijs_Grigorjevs_Resume.pdf" target="_blank" class="cv-pdf" aria-hidden="true" download="Genadijs_Grigorjevs_Resume.pdf"><i class="fa-solid fa-download" aria-hidden="true"></i></a>
+                    <a href="assets/cv/Genadijs GrigorjevsCVupd.pdf" target="_blank" class="cv-pdf" aria-hidden="true"
+                        download="Genadijs_Grigorjevs_Resume.pdf"><i class="fa-solid fa-download"
+                            aria-hidden="true"></i></a>
                     <span class="sr-only">Download</span>
                 </p>
             </div>
@@ -85,9 +107,9 @@
                             <span class="sr-only">Instagram</span>
                         </a>
                     </li>
+                </ul>
             </div>
         </div>
-
     </footer>
 </body>
 
