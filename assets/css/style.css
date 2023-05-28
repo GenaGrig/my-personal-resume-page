@@ -18,6 +18,14 @@
     background-color: blue;
 }
 
+.ui-menu-color-interests {
+    background-color: rgb(179, 62, 8);
+}
+
+.ui-menu-color-github {
+    background-color: rgb(21, 21, 182);
+}
+
 .ui-menu-color-download {
     background-color: rgb(61, 61, 61);
 }
@@ -396,3 +404,5 @@ button[type='submit'] {
         max-width: 50%;
     }
 }
+
+div#map {min-height: 360px;}
