@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://kit.fontawesome.com/fa2786a92a.js" crossorigin="anonymous"></script>
     <title>Genadijs Grigorjevs</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("AJVYu-T766WJz8Wjl");
+        })();
+    </script>
 </head>
 
 <body>
@@ -56,11 +65,10 @@
             <div class="col">
                 <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
                 <h5 class="uppercase text-center">Let's work together</h5>
-
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" class="form-control" name="name" id="fullname" placeholder="Name" required>
-                        <input type="email" class="form-control" name="email" id="emailadress" placeholder="Email" required>
+                        <input type="email" class="form-control" name="emailaddress" id="emailadress" placeholder="Email" required>
                         <textarea rows="5" class="form-control" name="projectsummary" id="projectsummary" 
                         placeholder="Project description" required></textarea>
                         <div class="form-row text-center">
@@ -68,7 +76,6 @@
                                 <button type="submit" class="btn btn-secondary">Send project request</button>
                             </div>
                         </div>
-
                     </form>
                 </div>
             </div>
@@ -117,6 +124,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
